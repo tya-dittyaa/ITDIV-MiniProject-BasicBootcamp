@@ -1,3 +1,6 @@
 # BACKEND FOLDER
 
 MINI PROJECT - BASIC BOOTCAMP - IT DIVISION BINUS - AMJS 2024
+
+### Project Status
+*coming soon*
