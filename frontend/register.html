@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <a class="wearhouse" href="#">WearHouse</a>
+                    <a class="category" href="#">Category</a>
+                    <a class="aboutus" href="#">About Us</a>
+                </div>
+                <button class="hamburger">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="user-links">
+                    <a href="#">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li>
+                        <a class="category" href="#">Category</a>
+                    </li>
+                    <li>
+                        <a class="aboutus" href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <form action="" method="post">
+            <h2>Registration</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter your email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="text" placeholder="Enter your password" name="password" required>
+                </div>
+                <div class="input-box">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="text" placeholder="Confirm password" name="confirmPassword" required>
+                </div>
+            </div>
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" value="check">
+                <p>By clicking register, i agree to terms and conditions</p>
+            </div>
+            <div class="button">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <p class="copyright">Copyright © 2023 Charles. All Rights Reserved</p>
+    </footer>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("show");
+    });
+</script>
