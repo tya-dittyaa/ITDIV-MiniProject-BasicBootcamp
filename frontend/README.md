@@ -16,10 +16,14 @@ MINI PROJECT - BASIC BOOTCAMP - IT DIVISION BINUS - AMJS 2024
 
 #### Login
 
-- [ ] styling html css
+- [x] styling html css
 - [ ] validasi
 
 ### Register
 
 - [x] styling html css
 - [x] validasi
+
+### About us
+
+- [x] styling html css
