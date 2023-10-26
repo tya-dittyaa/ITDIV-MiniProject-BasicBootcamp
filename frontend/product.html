@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Product</title>
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/product.css">
 </head>
-<body>
-
+<body onload="readAll()">
     <div class="wrapper">
         <div class="navbar">
             <div class="navdiv">
@@ -46,27 +45,27 @@
     </div>
 
     <div class="container">
-        <form action="" method="post">
-            <h2>Login</h2>
-            <div class="content">
-                <div class="input-box">
-                    <label for="email">Email</label>
-                    <input type="text" placeholder="Enter your email" name="email" required>
-                </div>
-                <div class="input-box">
-                    <label for="password">Password</label>
-                    <input type="text" placeholder="Enter your password" name="password" required>
-                </div>
-            </div>
-            <div class="terms">
-                <input type="checkbox" id="terms" name="terms" value="check">
-                <p>Remember me</p>
-            </div>
-            <div class="button">
-                <button type="submit"><a href="dashboard.html">Login</a></button>
-                <a href="#" class="forgot-password">Forgot your password?</a>
-            </div>
-        </form>
+        <div class="form_container">
+            <form class="create_form">
+                <input type="text" placeholder="Enter Category" class="category">
+                <button type="button" onclick="add()">Add</button>
+            </form>
+            <form class="update_form">
+                <input type="text" hidden class="update_id">
+                <input type="text" placeholder="Enter Category" class="ucategory">
+                <button type="button" onclick="update()">Update</button>
+            </form>
+            <button class="addbtn" onclick="createForm()">Add</button> <br>
+            <table class="table">
+                <thead>
+                    <th>Category</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="table_data">
+
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <footer class="footer">
@@ -78,7 +77,7 @@
         <p class="copyright">Copyright © 2023 Charles. All Rights Reserved</p>
     </footer>
 
-    <script src="js/register.js"></script>
+    <script src="./js/product.js"></script>
 </body>
 </html>
 
