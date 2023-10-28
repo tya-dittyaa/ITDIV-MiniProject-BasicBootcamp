@@ -55,6 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
     registrationForm.addEventListener("submit", function (e) {
         if (!validateForm()) {
             e.preventDefault();
+        }else {
+            window.location.href = 'Main.html';
         }
     });
 });
